@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1024px;
+	font-family: "Verdana", "arial", sans;
+	margin: 0 auto;
+}
+
+h1,h4 {
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+}
+
+fieldset {
+	padding: 15px;
+	margin: 10px;
+	width: 500px;
+}
+dt,
+label {
+	font-weight: bolder;
+	display: block;
+}
+
+button,
+input {
+	border: 1px solid #ccc;
+}
+
+.login {
+	margin: 30px auto;
+}
+
+.login fieldset {
+	margin: 0 auto;
+}
+
+.login fieldset > label {
+	margin: 10px 0;
+	width: 200px;
+}
+.index .report_card table tr td[colspan="3"],
+.index table tr th {
+	text-align: right;
+}
+.index table tr th:first-child {
+	text-align: left;
+}
+.index table tr td:nth-child(1n+2) {
+	text-align: right;
+	width: 100px;
+}
+.index td input {
+	width: 40px;
+	text-align: right;
+}
+.index td span label,
+.index td span {
+	display: inline-block;
+}
+.index td span label input {
+	display: block;
+	position: relative;
+	left: +15px;
+}
+.small {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+.tiny {
+	font-size: 0.6em;
+	font-weight: normal;
+}
+.warning {
+	color: #800;
+	font-weight: bolder;
+}
+span.issued,
+.index table tr.issued td:nth-child(1n+2),
+.index table tr.issued td:nth-child(1n+2) input{
+	font-weight: bolder;
+	color: #008;
+}
+.index .column {
+	vertical-align: top;
+	position: relative;
+	top: 0;
+	left: +5px;
+	display: inline-block;
+}
+.index .column:nth-child(1n+2) {
+	width: 400px;
+	padding-left: 10px;
+	font-size: smaller;
+}
+.report_card {
+	border: 1px solid #aaa;
+	padding:25px;
+}
+#buttons {
+	margin: 15px 0;
+}
+#logout {
+	position: absolute;
+	top: 0;
+	left: 1024px;
+}
+#footer {
+	font-size: smaller;
+	text-align: center;
+}

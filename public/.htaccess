@@ -1,0 +1,8 @@
+php_value display_errors 1 
+php_value display_startup_errors 1
+
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteRule (\.js|\.css|\.jpg|\.png) - [L]
+RewriteRule ^(auth|index|update|login|logout)$ index.php [L]
