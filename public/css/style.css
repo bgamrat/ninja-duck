@@ -7,10 +7,7 @@ body {
 	width: 1024px;
 	font-family: "Verdana", "arial", sans;
 	margin: 0 auto;
-        color: #2f2;
-        background-color: #000;
 }
-
 h1,h4 {
 	border-bottom: 1px solid #000;
 	margin-bottom: 20px;
