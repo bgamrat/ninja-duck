@@ -1,5 +1,6 @@
 <?php
 if (defined('_CONSTANTS_')) return;
+define('_CONSTANTS_',true);
 
 define('ATTEMPT_LIMIT',5);
 define('MAX_GPA',4.6);

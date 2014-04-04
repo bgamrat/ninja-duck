@@ -23,6 +23,7 @@ if (is_file(_DATA_FILE_)) {
 	}
 }
 
+$coreonly = false;
 if (isset($_POST) && !empty($_POST)) {
 	if ($_POST['action'] !== 'start_over') {
 		$coreonly = isset($_POST['coreonly']);

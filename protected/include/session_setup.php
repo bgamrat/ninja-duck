@@ -18,12 +18,12 @@ register_shutdown_function('shutdown',$xcsrf);
 /* /XCSRF handling */
 
 /* User error handling */
-set_error_handler(error_handler,E_USER_ERROR|E_USER_WARNING|E_USER_NOTICE);
 function error_handler($errno,$errstr,$errfile,$errline,$errcontext=null) {
 		echo 'USER['.$errno.']: '.$errstr.' '.$errfile.'('.$errline.')';
 	error_log('USER['.$errno.']: '.$errstr.' '.$errfile.'('.$errline.')');
 	die();
 }
+set_error_handler('error_handler',E_USER_ERROR|E_USER_WARNING|E_USER_NOTICE);
 /* /User error handling */
 
 /* Utility functions */
