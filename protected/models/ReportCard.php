@@ -34,10 +34,17 @@ class ReportCard extends Base {
 	}
 
 	public function setGrade($course_id, $isCore, $score) {
-		global $GRADING_SCALE;
+		global $GRADES, $GRADING_SCALE;
 		$grade = floor($score);
+                foreach ($GRADES as $min => $letter) {
+                    if ($grade >= $min) {
+                        $letter_grade = $letter;
+                        break;
+                    }
+                }
+                
 		$this->_grades[$course_id] = array('grade' => $grade, 
-			'letter' => preg_replace($GRADING_SCALE['ranges'],$GRADING_SCALE['letter_grades'],$grade),
+			'letter' => $letter_grade,
 			'isCore' => $isCore);
 	}
 

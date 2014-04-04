@@ -2,7 +2,6 @@
 if (defined('_CONSTANTS_')) return;
 define('_CONSTANTS_',true);
 
-define('ATTEMPT_LIMIT',5);
 define('MAX_GPA',4.6);
 define('MAX_SCORE', 110);
 
@@ -15,7 +14,6 @@ $GRADING_SCALE = array(
 	'F' => array('min' => 0, 'max' => 59, 'gpa' => 0.0),
 	);
 
-// TODO: before using this, check performance
-$GRADING_SCALE = array('ranges' => (array('/^((1\d\d)|(9\d))$/','/^(8\d)$/','/^(7\d)$/','/^(6\d)$/','/^([0-5]?\d)$/')),
-		'letter_grades' => (array('A','B','C','D','F')));
 $GPA_MAP = array('A' => 4, 'B' => 3, 'C' => 2, 'D' => 1, 'F' => 0);
+
+$GRADES = array(90 => 'A', 80 => 'B', 70 => 'C', 60 => 'D', 0 => 'F');

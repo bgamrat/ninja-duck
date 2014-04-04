@@ -8,7 +8,7 @@
 </head>
 <body class="tundra">
 <h1 id="heading">Report Cards</h1>
-<?php if ($_SESSION['logged_in']) : ?>
+<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) : ?>
 <a id="logout" href="logout">Logout <?php echo htmlentities($_SESSION['username']) ?></a>
 <?php endif ?>
 <div id="main" class="<?php echo $page ?>">

@@ -2,6 +2,8 @@
 if (defined('_INIT_')) return;
 define('_INIT_',true);
 
+if (!defined('ATTEMPT_LIMIT')) define('ATTEMPT_LIMIT', 5);
+
 define('_VERSION_','0.6');
 
 define('_DATA_FILE_','/tmp/students.json');
